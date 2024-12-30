@@ -3,18 +3,20 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using System.Net;
 using System.ComponentModel.DataAnnotations;
-using Services.Interface;
-using Infrastructure.Models.ResponseModel;
-using Infrastructure.Models.Authentication.LogIn;
-using Infrastructure.Models.Authentication.SignUp;
+using Identity_Infrastructure.Models.ResponseModel;
+using Identity_Infrastructure.Models.Authentication.LogIn;
+using Identity_Infrastructure.Models.Authentication.SignUp;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
-using Infrastructure.Context.SeedData;
-using Infrastructure.Entity;
+using Identity_Infrastructure.Context.SeedData;
+using Identity_Infrastructure.Entity;
+using Identity_Service.Interface;
+using Identity_Infrastructure.Authentication;
 
 
 namespace Identity.Controllers
 {
+ //   [HasPermission(PermissionEnum.AccessMember)]
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
@@ -40,7 +42,7 @@ namespace Identity.Controllers
             }
         }
 
-
+      //  [HasPermission(PermissionResourceEnum.Member,PermissionActionEnum.Create)]
         [HttpPost("user/register")]
         public async Task<IActionResult> RegisterUser (UserRequest request,string role)
         {
@@ -51,46 +53,7 @@ namespace Identity.Controllers
             }
             var result = await _service.RegisterUser(request,role);
             return Ok(result);
-           /* //Check User Exist
-            var usercheck= await _userManager.FindByNameAsync(request.UserName);
-            if (usercheck != null)
-            {
-                BaseResponse badresponse = new BaseResponse()
-                {
-                    Status = (int)HttpStatusCode.BadRequest,
-                    Message = "User Already Exists"
-                };
-                return BadRequest(badresponse);
-            }
-            // Add User
-            IdentityUser user = new IdentityUser()
-            {
-                UserName = request.UserName,
-                Email = request.Email,
-            };
-            var result = await _userManager.CreateAsync(user, request.Password);
-            if (result.Succeeded)
-            {
-                BaseResponse goodresponse = new BaseResponse()
-                {
-                    Status = (int)HttpStatusCode.OK,
-                    Message = "User Created Successfully"
-                };
-                return Ok(goodresponse);
-
-            }
-            else
-            {
-                BaseResponse badresponse = new BaseResponse()
-                {
-                    Status = (int)HttpStatusCode.BadRequest,
-                    Message = "User Failed To Create." 
-      
-                };
-                return BadRequest(badresponse);
-            }
-
-                //Assign Role*/
+          
         }
 
         [HttpPost("user/login")]
@@ -107,8 +70,11 @@ namespace Identity.Controllers
         }
 
 
+        
+        //[Authorize(Roles ="Admin")]
         [HttpGet("users/role")]
-        [Authorize]
+        [HasPermission(PermissionResourceEnum.Member, PermissionActionEnum.Read)]
+
         public async Task<ActionResult<IEnumerable<UserResponse>>> GetByRole(string role)
         {
             if (role == null)
@@ -127,11 +93,12 @@ namespace Identity.Controllers
         }
 
 
-        [Authorize(Roles ="Admin")]
+        // [Authorize(Roles ="Admin,User")]
         [HttpGet("me")]
-        public async Task<ActionResult<UserResponse>> GetUser()
+        public async Task<ActionResult<UserPermissionResponse>> GetUser()
         {
-          //  var UserId = _httpContextAccessor.HttpContext?.User?.FindFirst(ClaimTypes.NameIdentifier).Value;
+            //var token = _httpContextAccessor.HttpContext?.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
+            var UserId = _httpContextAccessor.HttpContext?.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             //var UserId = "70d80b6f-d2d2-449b-8d6c-fb9e046e867e";
             if (UserId == null)
             {
@@ -149,5 +116,19 @@ namespace Identity.Controllers
 
         
         }
+        [HttpGet("confirm-email")]
+        public async Task<IActionResult> ConfirmEmail(string userId, string token)
+        {
+            var result = await _service.ConfirmEmail(userId, token);
+            if (result == false)
+            {
+                return BadRequest("User not found.");
+            }
+            else
+            {
+                return Ok("Email-Confirmed");
+            }
+        }
+
     }
 }

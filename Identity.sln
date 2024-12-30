@@ -5,11 +5,11 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity", "Identity.csproj", "{794A5898-B7C5-4281-B067-0A404324666D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "..\Repo\Repository.csproj", "{BB4CFB86-342E-4BBB-A4C2-142EAB018DF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity_Repository", "..\Repo\Identity_Repository.csproj", "{BB4CFB86-342E-4BBB-A4C2-142EAB018DF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "..\ClassLibrary1\Services.csproj", "{93E18212-BC8C-4854-BC65-06BA968C51B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity_Service", "..\ClassLibrary1\Identity_Service.csproj", "{93E18212-BC8C-4854-BC65-06BA968C51B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "..\Infrastructure\Infrastructure.csproj", "{1D1F68C8-903D-40CE-A271-82D7FF97AEEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity_Infrastructure", "..\Infrastructure\Identity_Infrastructure.csproj", "{1D1F68C8-903D-40CE-A271-82D7FF97AEEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
