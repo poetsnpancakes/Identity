@@ -1,0 +1,17 @@
+C:\Users\Ayush\source\repos\ClassLibrary1\obj\Debug\net8.0\Identity_Service.csproj.AssemblyReference.cache
+C:\Users\Ayush\source\repos\ClassLibrary1\obj\Debug\net8.0\Identity_Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ayush\source\repos\ClassLibrary1\obj\Debug\net8.0\Identity_Service.AssemblyInfoInputs.cache
+C:\Users\Ayush\source\repos\ClassLibrary1\obj\Debug\net8.0\Identity_Service.AssemblyInfo.cs
+C:\Users\Ayush\source\repos\ClassLibrary1\obj\Debug\net8.0\Identity_Service.csproj.CoreCompileInputs.cache
+C:\Users\Ayush\source\repos\ClassLibrary1\bin\Debug\net8.0\Identity_Service.deps.json
+C:\Users\Ayush\source\repos\ClassLibrary1\bin\Debug\net8.0\Identity_Service.dll
+C:\Users\Ayush\source\repos\ClassLibrary1\bin\Debug\net8.0\Identity_Service.pdb
+C:\Users\Ayush\source\repos\ClassLibrary1\bin\Debug\net8.0\Identity_Infrastructure.dll
+C:\Users\Ayush\source\repos\ClassLibrary1\bin\Debug\net8.0\Identity_Repository.dll
+C:\Users\Ayush\source\repos\ClassLibrary1\bin\Debug\net8.0\Identity_Infrastructure.pdb
+C:\Users\Ayush\source\repos\ClassLibrary1\bin\Debug\net8.0\Identity_Repository.pdb
+C:\Users\Ayush\source\repos\ClassLibrary1\obj\Debug\net8.0\Identity.7EC1DE98.Up2Date
+C:\Users\Ayush\source\repos\ClassLibrary1\obj\Debug\net8.0\Identity_Service.dll
+C:\Users\Ayush\source\repos\ClassLibrary1\obj\Debug\net8.0\refint\Identity_Service.dll
+C:\Users\Ayush\source\repos\ClassLibrary1\obj\Debug\net8.0\Identity_Service.pdb
+C:\Users\Ayush\source\repos\ClassLibrary1\obj\Debug\net8.0\ref\Identity_Service.dll

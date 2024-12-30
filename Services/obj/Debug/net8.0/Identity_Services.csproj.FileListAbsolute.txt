@@ -1,0 +1,5 @@
+C:\Users\Ayush\source\repos\ClassLibrary1\obj\Debug\net8.0\Identity_Services.csproj.AssemblyReference.cache
+C:\Users\Ayush\source\repos\ClassLibrary1\obj\Debug\net8.0\Identity_Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ayush\source\repos\ClassLibrary1\obj\Debug\net8.0\Identity_Services.AssemblyInfoInputs.cache
+C:\Users\Ayush\source\repos\ClassLibrary1\obj\Debug\net8.0\Identity_Services.AssemblyInfo.cs
+C:\Users\Ayush\source\repos\ClassLibrary1\obj\Debug\net8.0\Identity_Services.csproj.CoreCompileInputs.cache
