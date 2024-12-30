@@ -1,0 +1,14 @@
+C:\Users\Ayush\source\repos\Infrastructure\obj\Debug\net8.0\Identity_Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Ayush\source\repos\Infrastructure\obj\Debug\net8.0\Identity_Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ayush\source\repos\Infrastructure\obj\Debug\net8.0\Identity_Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Ayush\source\repos\Infrastructure\obj\Debug\net8.0\Identity_Infrastructure.AssemblyInfo.cs
+C:\Users\Ayush\source\repos\Infrastructure\obj\Debug\net8.0\Identity_Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Ayush\source\repos\Infrastructure\bin\Debug\net8.0\Identity_Infrastructure.deps.json
+C:\Users\Ayush\source\repos\Infrastructure\bin\Debug\net8.0\Identity_Infrastructure.runtimeconfig.json
+C:\Users\Ayush\source\repos\Infrastructure\bin\Debug\net8.0\Identity_Infrastructure.dll
+C:\Users\Ayush\source\repos\Infrastructure\bin\Debug\net8.0\Identity_Infrastructure.pdb
+C:\Users\Ayush\source\repos\Infrastructure\obj\Debug\net8.0\Identity_Infrastructure.dll
+C:\Users\Ayush\source\repos\Infrastructure\obj\Debug\net8.0\refint\Identity_Infrastructure.dll
+C:\Users\Ayush\source\repos\Infrastructure\obj\Debug\net8.0\Identity_Infrastructure.pdb
+C:\Users\Ayush\source\repos\Infrastructure\obj\Debug\net8.0\Identity_Infrastructure.genruntimeconfig.cache
+C:\Users\Ayush\source\repos\Infrastructure\obj\Debug\net8.0\ref\Identity_Infrastructure.dll
