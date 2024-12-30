@@ -1,0 +1,15 @@
+C:\Users\Ayush\source\repos\Repo\bin\Debug\net9.0\Identity_Repository.deps.json
+C:\Users\Ayush\source\repos\Repo\bin\Debug\net9.0\Identity_Repository.dll
+C:\Users\Ayush\source\repos\Repo\bin\Debug\net9.0\Identity_Repository.pdb
+C:\Users\Ayush\source\repos\Repo\bin\Debug\net9.0\Identity_Infrastructure.dll
+C:\Users\Ayush\source\repos\Repo\bin\Debug\net9.0\Identity_Infrastructure.pdb
+C:\Users\Ayush\source\repos\Repo\obj\Debug\net9.0\Identity_Repository.csproj.AssemblyReference.cache
+C:\Users\Ayush\source\repos\Repo\obj\Debug\net9.0\Identity_Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ayush\source\repos\Repo\obj\Debug\net9.0\Identity_Repository.AssemblyInfoInputs.cache
+C:\Users\Ayush\source\repos\Repo\obj\Debug\net9.0\Identity_Repository.AssemblyInfo.cs
+C:\Users\Ayush\source\repos\Repo\obj\Debug\net9.0\Identity_Repository.csproj.CoreCompileInputs.cache
+C:\Users\Ayush\source\repos\Repo\obj\Debug\net9.0\Identity.CA71D356.Up2Date
+C:\Users\Ayush\source\repos\Repo\obj\Debug\net9.0\Identity_Repository.dll
+C:\Users\Ayush\source\repos\Repo\obj\Debug\net9.0\refint\Identity_Repository.dll
+C:\Users\Ayush\source\repos\Repo\obj\Debug\net9.0\Identity_Repository.pdb
+C:\Users\Ayush\source\repos\Repo\obj\Debug\net9.0\ref\Identity_Repository.dll
